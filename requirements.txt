@@ -1,5 +1,7 @@
 pandas
 numpy
 scikit-learn
+pymysql
+mysql-connector-python
 
 #-e . 
