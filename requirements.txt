@@ -1,7 +1,11 @@
+ipykernel
 python-dotenv
 pandas
 numpy
+matplotlib
+seaborn
 scikit-learn
+catboost
 pymysql
 mysql-connector-python
 dvc
