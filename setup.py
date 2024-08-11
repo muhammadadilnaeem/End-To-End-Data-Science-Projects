@@ -17,7 +17,7 @@ def get_requirements(file_path:str)->List[str]:
     return requirements
 
 setup(
-    name="End to End Data Science Project", # Change this according to project name
+    name="End to End Data Science Project", # Change this according to project name.
     version="0.0.1",
     author="Adil Naeem",
     author_email="madilnaeem0@gmail.com",
