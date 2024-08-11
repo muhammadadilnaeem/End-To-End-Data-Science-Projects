@@ -52,7 +52,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format="[%(asctime)s]: %(message)s")
 
-project_name = "Machine-Learning-Project"  # Change it according to requirements
+project_name = "mlproject"  # Change it according to requirements
 
 list_of_files = [
     # ".github/workflows/.gitkeep", # Activate if you need to 
