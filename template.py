@@ -71,7 +71,7 @@ list_of_files = [
     "Dockerfile",
     "requirements.txt",
     "setup.py",
-    #".env",    # Activate if you need to 
+    #".env",    # Activate if you need 
     "notebooks/experimentation.ipynb",
     "app.py",
     "static/style.css",
