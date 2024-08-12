@@ -123,7 +123,7 @@ Feel free to fork this repository and contribute by submitting a pull request. C
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/muhammadadilnaeem/Student-Performance-Indicater-End-To-End-Data-Science-Project/blob/main/LICENSE) file for details.
 
 
 MLFLOW_TRACKING_URI=[Mlflow and Dagshub Dashboard for this Project](https://dagshub.com/muhammadadilnaeem/Student-Performance-Indicater-End-To-End-Data-Science-Project.mlflow/#/experiments/0/runs/5a6a57d513a94584ae7761d7b4c4685b)
