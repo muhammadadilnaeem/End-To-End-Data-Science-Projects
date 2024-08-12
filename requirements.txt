@@ -6,6 +6,9 @@ matplotlib
 seaborn
 scikit-learn
 catboost
+xgboost
+flask
+dill
 pymysql
 mysql-connector-python
 dvc
