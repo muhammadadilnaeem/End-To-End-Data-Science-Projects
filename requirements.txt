@@ -12,5 +12,5 @@ dill
 pymysql
 mysql-connector-python
 dvc
-
+mlflow
 #-e . 
