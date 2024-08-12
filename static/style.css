@@ -21,10 +21,13 @@ h1 {
     color: #2E8B57;
     margin-bottom: 20px;
     font-size: 2.2em;
+    background-color: #DFF2E1;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 img.home-image {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 10px;
     margin: 20px 0;
@@ -106,10 +109,18 @@ input[type="number"]::-webkit-inner-spin-button {
     background-color: #E64A19;
 }
 
+/* Center Button
+.form-group {
+    text-align: center;
+} */
+
 /* Result Page Styles */
 .result-container h1 {
     color: #2E8B57;
     margin-bottom: 20px;
+    background-color: #DFF2E1;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .result-image {
@@ -145,4 +156,12 @@ input[type="number"]::-webkit-inner-spin-button {
         font-size: 1em;
         padding: 12px 25px;
     }
-}
+
+
+/* Center Button on Mobile */
+
+/*  
+    .form-group {
+        text-align: center;
+    }
+}*/
