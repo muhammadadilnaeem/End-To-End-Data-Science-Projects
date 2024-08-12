@@ -12,7 +12,7 @@
 
 <body>
     <div class="login-container">
-        <h1>Student Exam Performance Indicator</h1>
+        <h1>📊 Student Exam Performance Indicator 📊</h1>
         <form action="{{ url_for('predict_datapoint')}}" method="post" class="form">
             <fieldset>
                 <legend>Student Exam Performance Prediction</legend>
@@ -37,8 +37,7 @@
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="parental_level_of_education">Parental Level of Education</label>
-                    <select class="form-control" name="parental_level_of_education" id="parental_level_of_education"
-                        required>
+                    <select class="form-control" name="parental_level_of_education" id="parental_level_of_education" required>
                         <option class="placeholder" selected disabled value="">Select Parent Education</option>
                         <option value="associate's degree">Associate's degree</option>
                         <option value="bachelor's degree">Bachelor's degree</option>
@@ -66,22 +65,17 @@
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="writing_score">Writing Score out of 100</label>
-                    <input class="form-control" type="number" name="writing_score" id="writing_score"
-                        placeholder="Enter your Writing Score" min='0' max='100' required />
+                    <input class="form-control" type="number" name="writing_score" id="writing_score" placeholder="Enter your Writing Score" min='0' max='100' required />
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="reading_score">Reading Score out of 100</label>
-                    <input class="form-control" type="number" name="reading_score" id="reading_score"
-                        placeholder="Enter your Reading Score" min='0' max='100' required />
+                    <input class="form-control" type="number" name="reading_score" id="reading_score" placeholder="Enter your Reading Score" min='0' max='100' required />
                 </div>
                 <div class="form-group">
                     <input class="btn btn-primary" type="submit" value="Predict your Maths Score" />
                 </div>
             </fieldset>
         </form>
-        <h2 class="result">
-            The Prediction is {{results}}
-        </h2>
     </div>
 </body>
 
