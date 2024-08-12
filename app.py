@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for
+from flask import Flask, render_template, request, url_for, redirect
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
@@ -34,7 +34,14 @@ def predict_datapoint():
 
         predict_pipeline = PredictPipeline()
         results = predict_pipeline.predict(predict_df)
-        return render_template("home.html", results=results[0])
+        
+        # Redirect to results page
+        return redirect(url_for('result', results=results[0]))
+
+@app.route('/result', methods=['GET'])
+def result():
+    results = request.args.get('results')
+    return render_template('result.html', results=results)
 
 if __name__ == "__main__":
     app.run(debug=True)
