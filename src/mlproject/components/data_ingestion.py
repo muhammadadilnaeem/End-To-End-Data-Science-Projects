@@ -21,17 +21,17 @@ class DataIngestion:
     # Let's read the data from MySQL database
     def initiate_data_ingestion(self):
         try:
-            sql_df = read_sql_data()
+            df = pd.read_csv(os.path.join("notebook/data","raw.csv"))
             logging.info("Reading data from MySQL database has been completed.")
             
             # Create directory if it does not exist
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path), exist_ok=True)
 
             # Save data from SQL Database and save it to csv as raw.csv
-            sql_df.to_csv(self.ingestion_config.raw_data_path, index=False, header=True)
+            df.to_csv(self.ingestion_config.raw_data_path, index=False, header=True)
 
             # Split the saved data to train.csv and test.csv
-            train_set, test_set = train_test_split(sql_df, test_size=0.2, random_state=42)
+            train_set, test_set = train_test_split(df, test_size=0.2, random_state=42)
             train_set.to_csv(self.ingestion_config.train_data_path, index=False, header=True)
             test_set.to_csv(self.ingestion_config.test_data_path, index=False, header=True)
 
