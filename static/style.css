@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f0f4f8;
@@ -6,21 +7,30 @@ body {
     padding: 0;
 }
 
-.login-container {
+.container, .login-container, .result-container {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
     color: #2E8B57;
     margin-bottom: 20px;
+    font-size: 2.2em;
 }
 
+img.home-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Form Styles */
 form fieldset {
     border: 1px solid #ddd;
     padding: 20px;
@@ -57,31 +67,6 @@ legend {
     background-color: #f9f9f9;
 }
 
-.btn {
-    display: inline-block;
-    width: 100%;
-    padding: 15px;
-    font-size: 1.2em;
-    color: #fff;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #45a049;
-}
-
-.result {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 1.5em;
-    color: #FF5722;
-}
-
 input[type="number"] {
     -moz-appearance: textfield;
 }
@@ -90,4 +75,74 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.btn-home {
+    background-color: #FF5722;
+}
+
+.btn-home:hover {
+    background-color: #E64A19;
+}
+
+/* Result Page Styles */
+.result-container h1 {
+    color: #2E8B57;
+    margin-bottom: 20px;
+}
+
+.result-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.result-content p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.result-content h2 {
+    font-size: 2em;
+    color: #FF5722;
+    margin-top: 10px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .container, .login-container, .result-container {
+        padding: 15px;
+        margin: 30px 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
 }
