@@ -13,4 +13,5 @@ pymysql
 mysql-connector-python
 dvc
 mlflow
+dagshub
 #-e . 
