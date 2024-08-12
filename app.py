@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from src.mlproject.exception import CustomException
-from src.mlproject.pipelines import PredictPipeline, CustomData
+from src.mlproject.pipelines.prediction_pipeline import PredictPipeline, CustomData
 
 application = Flask(__name__)
 
@@ -37,4 +37,4 @@ def predict_datapoint():
         return render_template("home.html", results=results[0])
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+    app.run(debug=True)
